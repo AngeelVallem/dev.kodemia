@@ -1,0 +1,18 @@
+.app-theme{
+    margin-left: 1rem;
+    padding: 0.5rem 0.75rem;
+    background: rgb(65, 63, 63);
+    border-radius: 0.75rem;
+    color: honeydew;
+}
+
+
+.light-mode{
+    width: 40px;
+    height: 40px;
+    margin-left: 1rem;
+}
+
+.light-mode:hover{ 
+    cursor: pointer;
+}

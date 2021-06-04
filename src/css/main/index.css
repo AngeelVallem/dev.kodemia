@@ -1,0 +1,63 @@
+.avatar {
+  width: 30px;
+  height: 30px;
+}
+
+.avatar:hover{
+    cursor: pointer;
+}
+
+h4{
+    font-size: 1rem;
+    color: var(--post-h4);
+}
+
+h4:hover{
+    cursor: pointer;
+    color: var(--color-dark);
+}
+
+p{
+    color: var(--post-h4);
+}
+.post-title {
+  font-size: 2rem;
+  padding-left: 4rem;
+  font-weight: bold;
+}
+
+.post-title:hover {
+  color: #313ebe;
+  cursor: pointer;
+}
+
+ul li {
+  margin: 0 0.5rem;
+  color: #64707d;
+}
+
+ul {
+  list-style: none;
+}
+
+ul .reaction {
+  text-decoration: none;
+  color: #64707d;
+}
+
+.save {
+  padding-bottom: 13px;
+}
+
+.save-post {
+  background-color: #d2d6db !important;
+  padding: 0.5rem;
+  border: none;
+  color: #000;
+  border-radius: 5px;
+}
+
+
+.post{
+  background-color:var(--post-bg);
+}
