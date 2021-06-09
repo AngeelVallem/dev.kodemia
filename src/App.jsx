@@ -1,32 +1,23 @@
 import React from "react";
-import Header from "./components/Header/Header";
-import LeftSideBar from "./components/sideBar/index";
-import Posts from './components/posts/index'
-import RightSideBar from './components/sideBarRight/index'
-import AppLoading from "./components/AppLoading";
+
+import Home from "./screens/Home/index";
+import Login from "./screens/Login";
+import Excercise from "./screens/Excercises/ExcerciseList"
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./css/index.css";
 
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <Header />
-        <div className="container">
-          <div className="row">
-            <div className="col-3">
-              <LeftSideBar />
-            </div>
-            <div className="col-6">
-              <Posts/>
-            </div>
-            <div className="col-3">
-              <RightSideBar/>
-            </div>
-          <AppLoading/>
-          </div>
-        </div>
-      </div>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route path="/login" component={Login}/>
+            <Route path="/Exercise"  component={Excercise}/>
+          </Switch>
+        </Router>
     );
   }
 }
